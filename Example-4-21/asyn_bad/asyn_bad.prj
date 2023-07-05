@@ -1,0 +1,50 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Example-4-21\asyn_bad\asyn_bad.prj
+#-- Written on Thu Mar 09 02:05:10 2006
+
+
+#add_file options
+add_file -verilog "write_reg.v"
+add_file -verilog "top.v"
+add_file -verilog "read_reg.v"
+add_file -verilog "decode.v"
+
+
+#implementation: "rev_1"
+impl -add rev_1
+
+#device options
+set_option -technology LATTICE-EC
+set_option -part LFEC1E
+set_option -package T100C
+set_option -speed_grade -3
+
+#compilation/mapping options
+set_option -default_enum_encoding default
+set_option -symbolic_fsm_compiler 1
+set_option -resource_sharing 1
+
+#map options
+set_option -frequency auto
+set_option -fanout_limit 100
+set_option -disable_io_insertion 0
+set_option -force_gsr auto
+
+#simulation options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_format "edif"
+project -result_file "rev_1/decode.edn"
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+impl -active "rev_1"

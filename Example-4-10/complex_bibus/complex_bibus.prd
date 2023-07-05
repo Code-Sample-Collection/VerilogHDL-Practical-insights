@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Example-5-1\complex_bibus\complex_bibus.prd
+#-- Written on Mon Jan 02 21:43:55 2006
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

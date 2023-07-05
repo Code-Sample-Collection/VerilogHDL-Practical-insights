@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Chapter5\Example-5-7\mod_copy.prd
+#-- Written on Wed Mar 08 18:08:26 2006
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

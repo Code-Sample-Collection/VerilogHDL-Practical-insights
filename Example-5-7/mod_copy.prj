@@ -1,0 +1,51 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Chapter5\Example-5-7\mod_copy.prj
+#-- Written on Wed Mar 08 18:08:26 2006
+
+
+#add_file options
+add_file -verilog "source/mod_copy1.v"
+
+
+#implementation: "rev_1"
+impl -add rev_1
+
+#device options
+set_option -technology LATTICE-XP
+set_option -part LFXP10C
+set_option -package F388C
+set_option -speed_grade -3
+
+#compilation/mapping options
+set_option -default_enum_encoding onehot
+set_option -symbolic_fsm_compiler 0
+set_option -resource_sharing 0
+
+#map options
+set_option -frequency auto
+set_option -fanout_limit 100
+set_option -disable_io_insertion 0
+set_option -force_gsr auto
+
+#simulation options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_format "edif"
+project -result_file "rev_1/mod_copy1.edn"
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#par_1 attributes
+set_option -job par_1 -add par
+set_option -job par_1 -option run_backannotation 0
+impl -active "rev_1"

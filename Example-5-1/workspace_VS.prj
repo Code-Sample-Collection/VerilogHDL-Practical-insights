@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version 7.5.1     
+#-- Project file D:\prj_D\example-s1-1\FHT_example\workspace_VS.prj
+#-- Written on Tue Jan 25 20:54:33 2005
+
+project_data -type workspace
+
+#add_file options
+
+# sub-projects
+project -insert "before_optimized/before_optimized.prj"
+project -insert "after_optimized/after_optimized.prj"
+project_data -active "before_optimized"

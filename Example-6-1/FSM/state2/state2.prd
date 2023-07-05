@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Example-6-1\FSM\state2\state2.prd
+#-- Written on Fri Dec 16 18:27:33 2005
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear {  state2|clk - Estimated Frequency }

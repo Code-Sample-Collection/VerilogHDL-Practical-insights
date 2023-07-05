@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Example-4-14\clk_3div\synthesis\clk_div3.prd
+#-- Written on Wed Mar 08 22:24:43 2006
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

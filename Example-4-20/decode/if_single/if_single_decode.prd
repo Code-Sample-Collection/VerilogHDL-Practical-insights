@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Example-4-10\decode\if_single\if_single_decode.prd
+#-- Written on Mon Jan 16 09:34:37 2006
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

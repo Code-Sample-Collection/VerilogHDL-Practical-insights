@@ -1,5 +1,11 @@
 *.*
+
+# source
 !*.v
+
+# proj
+!*.prd
+!*.prj
 
 # tmp file
 transcript

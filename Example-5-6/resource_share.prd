@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version Synplify Pro 8.1
+#-- Project file C:\prj\Chapter5\Example-5-6\resource_share.prd
+#-- Written on Wed Mar 08 17:44:22 2006
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear { resource_share2 I/O ATOMs } { resource_share2 Total LUTs} { resource_share2 Logic resources } { resource_share1 I/O ATOMs } { resource_share1 Total LUTs} { resource_share1 Logic resources }
