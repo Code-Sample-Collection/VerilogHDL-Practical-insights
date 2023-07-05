@@ -2,10 +2,13 @@
 
 # source
 !*.v
+# wave
+!*.do
 
 # proj
 !*.prd
 !*.prj
+!*.txt
 
 # tmp file
 transcript
