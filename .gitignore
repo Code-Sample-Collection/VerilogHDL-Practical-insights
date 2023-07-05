@@ -10,8 +10,14 @@
 !*.prj
 !*.txt
 
+# doc
+!*.doc
+~$*.doc
+
+# ignored -----------------
 # tmp file
 transcript
+
 # tmp dir
 rev_*/
 sim/
