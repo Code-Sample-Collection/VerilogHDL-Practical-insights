@@ -1,8 +1,9 @@
 # <轻松成为设计高手 ——— VerilogHDL 实用精解> 示例代码
 
-- 作者：EDA 先锋工作室
+- 作者：EDA 先锋工作室 编著, 王诚, 吴继华
 - ISBN：978-7-5124-0790-9
 - 出版时间：2012-06-15
+- 北京航空航天大学出版社
 - LINK: http://service.buaapress.com.cn/mzs/book/detail/id/2583
 
 > 内容简介
