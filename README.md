@@ -4,7 +4,8 @@
 - ISBN：978-7-5124-0790-9
 - 出版时间：2012-06-15
 - 北京航空航天大学出版社
-- LINK: http://service.buaapress.com.cn/mzs/book/detail/id/2583
+- 出版社: http://service.buaapress.com.cn/mzs/book/detail/id/2583
+- 豆瓣: https://book.douban.com/subject/10812486/
 
 > 内容简介
 > 本书主要分为3部分： 第1～3章描述了Verilog HDL语言的基本概念、设计流程、语法与建模方式；第4～6章讨论如何合理使用Verilog HDL描述高性能的可综合电路；第7、8章重点描述了如何编写测试激励以及Verilog的仿真原理。另外，第9章对Verilog HDL语言的发展趋势做了展望。
