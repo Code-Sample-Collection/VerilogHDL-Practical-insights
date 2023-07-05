@@ -19,10 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-//ÒÔÏÂÊÇmoduleÃû³Æ, ¶Ë¿ÚÁĞ±í
+//ä»¥ä¸‹æ˜¯moduleåç§°, ç«¯å£åˆ—è¡¨
 module HelloVlog ( Clock, Reset_n, A_in, B_in, Sel_in, A_xor_out, B_xor_out ); 
 
-//ÒÔÏÂÊÇÊäÈëºÍÊä³ö¶Ë¿ÚÉùÃ÷
+//ä»¥ä¸‹æ˜¯è¾“å…¥å’Œè¾“å‡ºç«¯å£å£°æ˜
 input Clock;
 input Reset_n;
 input [1:0] A_in;
@@ -31,7 +31,7 @@ input Sel_in;
 output A_xor_out;
 output B_xor_out;
 
-//ÒÔÏÂÊÇÏßÍøºÍ¼Ä´æÆ÷ÉùÃ÷
+//ä»¥ä¸‹æ˜¯çº¿ç½‘å’Œå¯„å­˜å™¨å£°æ˜
 wire A_xor_wire;
 wire B_xor_wire;
 wire [1:0] result;
@@ -39,30 +39,30 @@ reg eq0, eq1, eq2, eq3;
 reg A_xor_out;
 reg B_xor_out;
 
-//ĞĞÎªÃèÊö, DFF_A
+//è¡Œä¸ºæè¿°, DFF_A
 always @ (posedge Clock or negedge Reset_n)
     if (~Reset_n)
         A_xor_out <= 0;
     else
         A_xor_out <= A_xor_wire;
 
-//ĞĞÎªÃèÊö, DFF_B
+//è¡Œä¸ºæè¿°, DFF_B
 always @ (posedge Clock or negedge Reset_n)
     if (~Reset_n)
         B_xor_out <= 0;
     else
         B_xor_out <= B_xor_wire;
 
-//Êı¾İÁ÷ÃèÊö, XOR_A
+//æ•°æ®æµæè¿°, XOR_A
 assign #1 A_xor_wire = eq0 ^ eq1 ;
 
-//½á¹¹»¯ÃèÊö, XOR_B
+//ç»“æ„åŒ–æè¿°, XOR_B
 xor #1 XOR_B ( B_xor_wire, eq2, eq3 );
 
-//Êı¾İÁ÷ÃèÊö, MUX2
+//æ•°æ®æµæè¿°, MUX2
 assign #3 result = (Sel_in) ? B_in : A_in;
 
-//ĞĞÎªÃèÊö, DECODE2
+//è¡Œä¸ºæè¿°, DECODE2
 always @ ( result )
 begin
     case ( result )
@@ -86,6 +86,5 @@ begin
     endcase
 end
 
-//module½áÊø
+//moduleç»“æŸ
 endmodule
-

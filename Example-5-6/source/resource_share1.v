@@ -1,5 +1,5 @@
 module resource_share1 (data_in,square);
-input [7:0]   data_in;     //ÊäÈëÊÇ²¹Âë
+input [7:0]   data_in;     //è¾“å…¥æ˜¯è¡¥ç 
 output [15:0]  square;
 wire  [7:0]   data_bar;
 

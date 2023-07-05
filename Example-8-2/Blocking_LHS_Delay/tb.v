@@ -36,7 +36,7 @@ input [3:0] b ;
 output [4:0] sum ;
 reg [4:0] sum ;
 
-always @( a or b ) begin //Óï¾äA£¬²»ÍÆ¼ö
+always @( a or b ) begin //è¯­å¥Aï¼Œä¸æ¨è
 #5 sum = a + b ;
 end
 
