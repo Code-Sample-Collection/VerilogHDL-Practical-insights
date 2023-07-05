@@ -1,1 +1,12 @@
-*/
+*.*
+!*.v
+
+# tmp file
+transcript
+# tmp dir
+rev_*/
+sim/
+PrecisionRTL/
+precision_impl_*/
+decode_case_impl_*/
+SynplifyPro/
